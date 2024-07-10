@@ -249,6 +249,7 @@ h1 {
     opacity: 0;
     transform: translateY(-50px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -260,8 +261,36 @@ h1 {
     opacity: 0;
     transform: translateX(50px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+
+@media only screen and (max-width:660px) {
+  #main-header {
+    flex-direction: column;
+    padding: 3rem 12%;
+
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #shop {
+    width: 90%;
+  }
+
+  #modal {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:350px) {
+  #main-header {
+    padding: 3rem 8%;
   }
 }
